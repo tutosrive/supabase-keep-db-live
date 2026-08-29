@@ -70,7 +70,7 @@ jobs:
                   // Ping by making an actual network request to verify connectivity
                   // We'll use a simple REST API call to check if the server is reachable
                   const startTime = Date.now();
-                  const response = await fetch(config.url + '/rest/v1/', {
+                  const response = await fetch(config.url + '/rest/v1/ht?select=id&limit=1', {
                     headers: {
                       'apikey': config.key,
                       'Authorization': 'Bearer ' + config.key
