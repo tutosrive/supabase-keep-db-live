@@ -1,4 +1,4 @@
-name: Ping Supabase to Prevent Pausing
+name: Stargazers
 
 on:
   schedule:
