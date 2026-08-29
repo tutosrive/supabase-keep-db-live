@@ -59,9 +59,6 @@ jobs:
                 const dbName = config.name || 'Database ' + (i + 1);
                 
                 try {
-                  console.log('\n[' + (i + 1) + '/' + configs.length + '] ' + dbName);
-                  console.log('URL:', config.url);
-                  
                   if (!config.url || !config.key) {
                     throw new Error('Missing url or key for ' + dbName);
                   }
