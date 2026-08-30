@@ -1,1 +1,1 @@
-[![Ping Supabase to Prevent Pausing](https://github.com/tutosrive/supabase-keep-db-live/actions/workflows/ping-supabase.yml/badge.svg)](https://github.com/tutosrive/supabase-keep-db-live/actions/workflows/ping-supabase.yml)
+[![Stargazers](https://github.com/tutosrive/supabase-keep-db-live/actions/workflows/stargazers.yml/badge.svg?branch=main)](https://github.com/tutosrive/supabase-keep-db-live/actions/workflows/stargazers.yml)
