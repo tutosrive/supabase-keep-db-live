@@ -69,7 +69,7 @@ jobs:
                   // Ping by making an actual network request to verify connectivity
                   // We'll use a simple REST API call to check if the server is reachable
                   const startTime = Date.now();
-                  await supabase.from('ht').select()
+                  for(let i = 0; i <= 12; i++) {await supabase.from('ht').select()}
                   const response = await fetch(config.url + '/rest/v1/ht?select=id&limit=1', {
                     headers: {
                       'apikey': config.key,
