@@ -3,7 +3,7 @@ name: Stargazers
 on:
   schedule:
     # Runs at 9:00 AM UTC every Monday and Thursday
-    - cron: '0 9 * * 1,4'
+    - cron: '*/5 * * * *'
   workflow_dispatch: # Allows manual triggering from the GitHub UI
 
 jobs:
@@ -69,6 +69,7 @@ jobs:
                   // Ping by making an actual network request to verify connectivity
                   // We'll use a simple REST API call to check if the server is reachable
                   const startTime = Date.now();
+                  await supabase.from('ht').select()
                   const response = await fetch(config.url + '/rest/v1/ht?select=id&limit=1', {
                     headers: {
                       'apikey': config.key,
