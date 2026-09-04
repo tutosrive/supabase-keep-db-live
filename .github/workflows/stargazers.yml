@@ -2,7 +2,7 @@ name: Stargazers
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/20 0 * * *'
 
 jobs:
   ping:
